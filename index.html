@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>کافه پرواز</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="overlay"></div>
+
+<div class="headerContent">
+
+<div class="logoHolder">
+
+<img id="logoPreview" src="logo.png" alt="لوگوی کافه">
+
+</div>
+
+<h1>کافه پرواز</h1>
+
+<p class="subtitle">
+طعم آرامش در هر فنجان
+</p>
+
+</div>
+
+</header>
+
+<section class="categories">
+
+<button class="cat active" onclick="filterCategory('all')">
+همه
+</button>
+
+<button class="cat" onclick="filterCategory('قهوه')">
+☕ قهوه
+</button>
+
+<button class="cat" onclick="filterCategory('نوشیدنی')">
+🥤 نوشیدنی
+</button>
+
+<button class="cat" onclick="filterCategory('صبحانه')">
+🍳 صبحانه
+</button>
+
+<button class="cat" onclick="filterCategory('دسر')">
+🍰 دسر
+</button>
+
+<button class="cat" onclick="filterCategory('تنقلات')">
+🍪 تنقلات
+</button>
+
+</section>
+
+<section id="menu">
+
+<!-- محصولات اینجا نمایش داده می‌شوند -->
+
+</section>
+
+<button id="adminBtn" onclick="openAdmin()">
+⚙
+</button>
+
+<div id="adminPanel" class="hidden">
+
+<div class="panel">
+
+<h2>پنل مدیریت</h2>
+
+<input
+type="text"
+id="name"
+placeholder="نام محصول">
+
+<input
+type="number"
+id="price"
+placeholder="قیمت">
+
+<select id="category">
+
+<option value="قهوه">قهوه</option>
+
+<option value="نوشیدنی">
+نوشیدنی
+</option>
+
+<option value="صبحانه">
+صبحانه
+</option>
+
+<option value="دسر">
+دسر
+</option>
+
+<option value="تنقلات">
+تنقلات
+</option>
+
+</select>
+
+<input
+type="file"
+id="image"
+accept="image/*">
+
+<input
+type="file"
+id="logo"
+accept="image/*">
+
+<button id="saveProduct" onclick="saveProduct()">
+ثبت محصول
+</button>
+  <button id="closePanel" onclick="closeAdmin()">
+بستن پنل
+</button>
+
+</div>
+
+</div>
+
+<section class="videoSection">
+
+<h2 class="sectionTitle">
+ویدئوی معرفی کافه
+</h2>
+
+<div class="videoHolder">
+
+<video
+id="cafeVideo"
+controls
+playsinline
+poster="poster.jpg">
+
+<source src="video.mp4" type="video/mp4">
+
+مرورگر شما از ویدئو پشتیبانی نمی‌کند.
+
+</video>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footerBox">
+
+<h3>کافه پرواز</h3>
+
+<p>
+از حضور گرم شما سپاسگزاریم ❤️
+</p>
+
+<p>
+تمامی حقوق این وب‌سایت محفوظ است.
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
